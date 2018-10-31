@@ -1,0 +1,67 @@
+plugins {
+    id 'java'
+}
+
+group 'com.lee.test'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+
+// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    compile group: 'org.springframework', name: 'spring-context', version: '5.1.1.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '5.1.1.RELEASE'
+
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot
+    compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.0.6.RELEASE'
+// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.0.6.RELEASE'
+    
+
+// https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-core
+    compile group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.21'
+
+
+
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    compile group: 'com.google.guava', name: 'guava', version: '27.0-jre'
+
+
+
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    compile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.1'
+    
+    
+    
+
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.1'
+// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
+// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.3.1'
+// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-migrationsupport
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-migrationsupport', version: '5.3.1'
+    
+    /*
+    * 
+    * 
+    * testCompile('org.assertj:assertj-core:3.10.0')
+    testCompile('org.mockito:mockito-core:2.19.1')
+    testCompile('org.junit-pioneer:junit-pioneer:0.1.2')
+    testCompile('org.mockito:mockito-junit-jupiter:2.19.1')
+    * 
+    * */
+
+}

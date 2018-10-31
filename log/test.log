@@ -1,0 +1,16 @@
+23:39:45.591 INFO  jdk11.map.HashMap 110 put - put---------------------modCount:0
+23:39:45.603 INFO  jdk11.map.HashMap 142 putVal - 将table赋给tab
+23:39:45.604 INFO  jdk11.map.HashMap 144 putVal - table为null
+23:39:45.605 INFO  jdk11.map.HashMap 292 resize - 创建 Node[] newTab, 赋予table，threshold:12,newCap:16,newThr:12oldTab isNull:false
+23:39:45.605 INFO  jdk11.map.HashMap 348 resize - return newTab
+23:39:45.606 INFO  jdk11.map.HashMap 146 putVal - tab renTab
+23:39:45.606 INFO  jdk11.map.HashMap 148 putVal - tab[i = (n - 1) & hash]):  tab[1] i:1, hash:1
+23:39:45.608 INFO  jdk11.map.HashMap 151 putVal - 创建一个新节点，tab[1]指向这个节点hash:1,value:1
+23:39:45.610 INFO  jdk11.map.HashMap 199 putVal - modCount:1
+23:39:45.611 INFO  jdk11.map.HashMap 110 put - put---------------------modCount:1
+23:39:45.611 INFO  jdk11.map.HashMap 142 putVal - 将table赋给tab
+23:39:45.612 INFO  jdk11.map.HashMap 148 putVal - tab[i = (n - 1) & hash]):  tab[1] i:1, hash:1
+23:39:45.613 INFO  jdk11.map.HashMap 167 putVal - 发生碰撞, 当前p.hash:1,p.value:2,进入搜索next节点的循环
+23:39:45.613 INFO  jdk11.map.HashMap 170 putVal - p.next为空，为其创建新的节点，p.next.hash:1, p.next.value:2
+23:39:45.614 INFO  jdk11.map.HashMap 177 putVal - 跳出循环
+23:39:45.614 INFO  jdk11.map.HashMap 199 putVal - modCount:2

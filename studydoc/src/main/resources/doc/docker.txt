@@ -1,0 +1,25 @@
+
+遇到的坑：
+
+1.如何实现在现有容器的基础上，创建子类容器。
+
+坑1，挂载：
+通过挂载的方式，会将容器中的被挂载目录清空，所以，挂载必须是两两都为空
+
+坑2，继承：
+继承仅仅是对数据共享做继承，并不对非数据共享的地方有影响。
+
+实践：
+
+1.在现有容器的基础上，创建子类容器。
+docker run -d --name nginx_80_80 -p 80:80 \
+-v /home/vagrant/sharefile/var/log/nginx/:/tmp/ \
+--volumes-from nginx5 nginx
+
+
+
+
+docker run -d --name nginx4 -p 80:80  \
+nginx
+
+docker run -it --name dc02 --volumes-from

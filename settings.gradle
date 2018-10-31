@@ -1,0 +1,7 @@
+rootProject.name = 'jdk11_Lee_Project'
+include 'tdd'
+include 'dubbo'
+include 'spring'
+include 'studydoc'
+include 'SpringBootSXT'
+
